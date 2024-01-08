@@ -1,0 +1,314 @@
+html,body,div{
+	margin:0;
+	padding:0;
+	border:0;
+	
+}
+
+body{
+	font-family: 'Pacifico','Mochiy Pop P One', sans-serif;
+	font-size:large;
+	margin: 0;
+    padding: 0;
+	background: radial-gradient(circle, #292828a8, #000000);
+	max-height:100%;
+}
+
+#desibd{
+	width:100%;
+	height:1024px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+header{
+	width:100%;
+	height:10%;
+	background:#444b46;
+	
+}
+nav{
+	width:20%;
+	height:70%;
+	background:linear-gradient(to bottom,#66aa96,#b3b3b3);
+	text-align: left;			
+	}
+
+section {
+	top:10%;
+	height:70%;
+	max-width: 100%;
+	width: 100%;
+		
+		
+		
+	}
+	
+	/* 將 Carousel 定位在頁面中央 */
+	main.awSlider {
+		position: fixed;
+		top: 60px; /* 考慮 header 的高度 */
+		left: 0;
+		width: 100%;
+		height: calc(100% - 60px); /* 考慮 header 的高度 */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	
+	/* 調整 Carousel 寬度和高度，使其填滿整個版面 */
+	main.awSlider .carousel {
+		max-width: 100%;
+		width: 100%;
+		max-height: 100%;
+		height: 100%;
+		object-fit: cover;
+		
+	}
+
+aside{
+	width:20%;
+	height:70%;
+	background:linear-gradient(to bottom,#92fadb,#b3b3b3);	
+	}
+
+footer{
+	width:100%;
+	height:20%;
+	background:#444b46;
+	align-self: flex-end;
+	flex: 1;
+	text-align: center;
+	color:white;
+	font-family: 'Anton','Kiwi Maru', sans-serif;
+	font: size 0.75em;
+	}
+.textcolor{
+	color:white;
+	font-family: 'Anton','Kiwi Maru', sans-serif;
+	font-size:1.5em;
+	}	
+.abc{
+	color:white;
+	font-family: 'Anton','Kiwi Maru', sans-serif;
+	font-size:150%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: flex-start; /* 左对齐 */
+ 	align-items: flex-start; /* 上对齐 */
+	text-decoration: none;
+}
+
+
+
+/*div>div{
+	width:80px;
+	height:40px;
+	background-color:#aaa;
+	border:1px solid;
+	border-radius:0.3em;
+	text-align:center;
+}*/
+/*.def {
+	color: white;
+	font-family: 'Anton','Kiwi Maru', sans-serif;
+	font-size: 1.5em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 2px;
+	width: 200px;
+	justify-content: center;  水平居中 
+	align-items: center;  垂直居中
+  } */
+  
+  .centered-container {
+	display: flex;
+	align-items: center; /* 垂直居中 */
+	justify-content: center; /* 水平居中 */
+  }
+  
+  .def {
+	color: white;
+	font-family: 'Anton','Kiwi Maru', sans-serif;
+	font-size: 150%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 2px;
+	width: 250px;
+	text-align: center; /* 文字水平居中 */
+	text-decoration: none;
+  }
+.shape-ex11{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: #FFF;
+    background-color: transparent;
+    position: relative;
+    transition: all .3s linear;
+	margin:10px;
+	
+}
+.shape-ex11 > p{
+    position: relative;
+    z-index: 1;
+	
+}
+.shape-ex11::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    border-top: 1px solid #a3b89d;
+    border-left: 1px solid #a3b89d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s linear;
+	
+}
+.shape-ex11::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 1px solid #a3b89d;
+    border-right: 1px solid #a3b89d;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all .3s ease;
+	
+}
+.shape-ex11:hover::before,
+.shape-ex11:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.img-container {
+	position: relative;
+	display: inline-block;
+}
+
+.img-container img {
+	width: 30px;
+	height: 30px;
+	transition: transform 0.3s;
+}
+
+.img-container:hover img {
+	transform: scale(1.2);
+	filter: grayscale(100%);
+}
+.home{
+	margin-top: 10px;
+	margin-left: 10px;
+
+}
+.margin-bottom{
+	margin-top: 20px;
+}
+
+.centered-container {
+    text-align: center;
+}
+
+ul {
+	/* 取消ul預設的內縮及樣式 */
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  ul.drop-down-menu {	
+	display: inline-block;
+  }
+  
+  ul.drop-down-menu li {
+	position: relative;
+	white-space: nowrap;
+	
+  }
+  
+  
+  
+  ul.drop-down-menu>li {
+	float: left;
+	/* 只有第一層是靠左對齊*/
+  }
+  
+  ul.drop-down-menu a {
+    background-color: #37485a;
+    color: #fcfcfc;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+  
+ 
+  
+  ul.drop-down-menu li:hover>a {
+	/* 滑鼠移入次選單上層按鈕保持變色*/
+	background-color: #725d5d;
+	color: #fff;
+  }
+  
+  ul.drop-down-menu ul {
+	border: #ccc 1px solid;
+	position: absolute;
+	z-index: 99;
+	left: -1px;
+	top: 100%;
+	min-width: 180px;
+  }
+  
+  
+  
+  ul.drop-down-menu ul li:last-child {
+	border-bottom: none;
+  }
+  
+  ul.drop-down-menu ul ul {
+	/*第三層以後的選單出現位置與第二層不同*/
+	z-index: 999;
+	top: 10px;
+	left: 90%;
+  }
+  
+  ul.drop-down-menu ul {
+	/*隱藏次選單*/
+	display: none;
+  }
+  
+  ul.drop-down-menu li:hover>ul {
+	/* 滑鼠滑入展開次選單*/
+	display: block;
+  }
+
+  /* .iframe-link {
+    //定義連結樣式 
+    color: blue; // 可以根據需要設置其他樣式 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.web-iframe {
+    // 定義 iframe 樣式 
+    width: 100%;
+    height: 150%;
+    border: none; // 移除 iframe 的邊框 
+}*/
